@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+		<meta charset="UTF-8">
+        <!-- 호환성 보기 모드 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- 모바일 브라우저의 뷰포트 크기조절 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- 카카오톡 공유시 나오는 문구들 -->
+        <meta property="og:title" content="JakeLAB Link">
+        <meta property="og:description" content="Welcome to JakeLAB">
+        <meta property="og:image" content="./img/Jake_wink.png">
+        <title>Profile Link</title>
+        <style>
+            @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+            * {
+                font-family: "Pretendard",serif;
+            }
+            body {
+                background-color: white;
+            }
+            .profile_img {
+                width: 100px;
+                height: 100px;
+                
+                /* background-color: bisque; */
+                border-radius: 100%;
+                border: 2px solid black;
+
+                background-image: url('./Jake_wink.png');
+                background-position: center;
+                background-size: cover;
+            }
+            .main {
+                color: black;
+                font-size: 20px;
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+            .sub {
+                font-size: 14px;
+                margin-top: 0px;
+                margin-bottom: 30px;
+            }
+            .profile {
+                /* background-color: tan; */
+                width: 300px;
+                /* margin: top left bottom right */
+                margin: 30px auto 0px auto;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .profile > a {
+                width: 300px;
+                height: 50px;
+                /* background-color: gray; */
+                border-radius: 8px;
+                border: 2px solid black;
+                margin-bottom: 10px;
+
+                font-size: 14px;
+                font-weight: bold;
+                color: black;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                text-decoration: none;
+                /* box-shadow: right buttom taillength 선명도 색상 */
+                box-shadow: 3px 3px 5px 0px black;
+            }
+            .profile > a:hover {
+                background-color: #f2f2f2;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- div: 하나의 구역 설정 -->
+        <div class="profile">
+            <div class="profile_img"></div>
+            <h1 class="main">Jake LAB</h1>
+            <p class="sub">Let's do someting fun!</p>
+
+            <a target="_blank" href="https://www.google.com">Google</a>
+            <a target="_blank" href="https://github.com/jworkslab">Github</a>
+            <a target="_blank" href="https://www.notion.so/J-LAB-33b8dc816b19421b86744fe357dc482d">Notion</a>
+            <a target="_blank" href="http://pf.kakao.com/_HKWxgb">과천코딩</a>
+        </div>
+    </body>
+</html>
